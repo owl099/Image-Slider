@@ -13,20 +13,20 @@ A responsive image slider that adjusts its layout based on the screen size. The 
 - **Background Blur:** Adds a blurred effect to the background to enhance the focus on the slider.
 
 
+## Images
 
-##**Images**  : To change the images, replace the src attributes in the img tags within the index.html file.
+To change the images, replace the `src` attributes in the `img` tags within the `index.html` file.
 
-Slide Duration: You can modify the slide duration by updating the setInterval time in the script.js file.
+## Slide Duration
 
+You can modify the slide duration by updating the `setInterval` time in the `script.js` file.
 
-##**Technologies Used**
+## Technologies Used
 
--**HTML5**
--**CSS3**
--**JavaScript (ES6)
+- HTML5
+- CSS3
+- **JavaScript (ES6)**
 
-
-##**Contributing**
-
+## Contributing
 
 Feel free to contribute by forking this repository and submitting pull requests. For major changes, please open an issue first to discuss what you'd like to change.
