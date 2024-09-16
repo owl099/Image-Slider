@@ -14,16 +14,19 @@ A responsive image slider that adjusts its layout based on the screen size. The 
 
 
 
-##**Images**: To change the images, replace the src attributes in the img tags within the index.html file.
+##**Images**  : To change the images, replace the src attributes in the img tags within the index.html file.
 
 Slide Duration: You can modify the slide duration by updating the setInterval time in the script.js file.
 
 
 ##**Technologies Used**
-HTML5
-CSS3
-JavaScript (ES6)
+
+-**HTML5**
+-**CSS3**
+-**JavaScript (ES6)
 
 
 ##**Contributing**
+
+
 Feel free to contribute by forking this repository and submitting pull requests. For major changes, please open an issue first to discuss what you'd like to change.
