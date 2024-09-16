@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.slider-container {
+  height: 70vh;
+  width: 50%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  justify-items: center;
+}
+
+.slider-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.slider-image {
+  display: none;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  border-radius: 40px;
+}
+
+.slider-image.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.prev, .next {
+  height: 30%;
+  width: 40%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  align-content: center;
+  align-self: center;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: white; /* Default color for inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Dark color for the active dot */
+.dot.active-dot {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark color for active dot */
+  transform: scale(1.2); /* Slightly larger for emphasis */
+}
