@@ -1,17 +1,20 @@
-# **Image-Slider**
-A fully responsive image slider built with HTML, CSS, and JavaScript. This project includes an intuitive interface with dot indicators that represent the current slide, along with "Next" and "Previous" buttons for manual navigation.
+# Image Slider
 
-##**Features**
-Automatic Slide Transitions: Slides automatically transition every 5 seconds, ensuring a smooth user experience.
-Manual Navigation: Users can manually switch between slides using "Next" and "Prev" buttons.
-Dot Indicators: A row of dots below the slider highlights the current slide, with the active slide’s dot appearing darker than the others.
-Responsive Design: The slider adapts to various screen sizes, maintaining a user-friendly experience on both desktop and mobile devices.
+## Description
 
-##**Usage**
-Simply click the "Next" or "Prev" buttons to navigate manually between slides.
-The slider automatically transitions between slides every 5 seconds, with the corresponding dot indicating the current slide.
-Customization
-Images: To change the images, replace the src attributes in the img tags within the index.html file.
+A responsive image slider that adjusts its layout based on the screen size. The slider features smooth transitions, navigation buttons, and a position indicator using dots. The slider also includes a background blur effect for a modern look.
+
+## Features
+
+- **Responsive Design:** Adapts to different screen sizes, changing the layout for mobile and desktop views.
+- **Smooth Transitions:** Images transition smoothly with a slight zoom effect.
+- **Navigation Buttons:** Easily navigate through images with previous and next buttons.
+- **Position Indicator:** Dots indicate the current slide, changing color to highlight the active slide.
+- **Background Blur:** Adds a blurred effect to the background to enhance the focus on the slider.
+
+
+
+##**Images**: To change the images, replace the src attributes in the img tags within the index.html file.
 
 Slide Duration: You can modify the slide duration by updating the setInterval time in the script.js file.
 
